@@ -1,0 +1,311 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* base */
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+
+body {
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    line-height: 1.5;
+}
+
+p{
+    display: inline-block;
+    text-decoration: none;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color:#FFFFFF;
+}
+
+a:hover:not(.logo) {
+    opacity: 0.7;
+}
+
+.d-flex{
+    display: flex;
+}
+
+  
+/*header*/
+.bg-primary{
+    background-color:#AA0601
+}
+
+.header{
+    color: #FFFFFF;
+   
+}
+
+.nav{
+    font-size: 20px;
+}
+
+.nav-item a{
+    padding: 8px 32px;
+}
+
+.pr-0 {
+    padding-right: 0 !important;
+}
+
+
+.header img{
+    width: 80px;
+    height: 48px;
+    padding: 12px 0px;
+}
+
+.header-wrap{
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .header-container{
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    
+ }
+
+ .logo{
+    padding: 4px 0px;
+
+ }
+
+
+
+@media (max-width: 768px) {
+    .header {
+      padding: 0;
+    }
+    .header-wrap {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .header .nav {
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  
+    .header .nav-item {
+      text-align: center;
+      padding: 0;
+      width: 50%;
+    }
+  
+    .header .nav-item a {
+      width: 100%;
+      padding: 12px 0;
+      border: solid 1px white;
+    }
+
+    .header-container{
+        margin: 0 auto;
+        padding: 0px;
+     }
+     
+     .logo{
+        padding: 4px 15px;
+     }
+
+  }
+
+  
+  
+
+  .container{
+    max-width: 1296px;
+    padding: 0px 12px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 992px) {
+    .container {
+      max-width: 672px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .container {
+      max-width: 324px;
+    }
+
+    .header-container{
+        padding: 0px;
+    }
+  }
+
+
+  /*footer*/
+    .footer{
+        padding-top: 48px;
+        padding-bottom: 32px;
+        color: #FFFFFF;
+        font-family: "Noto Sans TC", sans-serif;
+    }
+
+    .footer-container{
+     max-width: 1296px;
+     margin: 0 auto;
+     padding: 0px 12px;
+    }
+
+    .footer-header {
+    justify-content: space-between;
+    border-bottom: solid 1px white;
+    padding-bottom: 32px;
+    margin-bottom: 32px;}
+
+    .footer-nav{
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+
+    .footer-nav-m{
+        margin-bottom: 26px;
+    }
+
+    .footer-contact-logo{
+        font-family: 'Material Symbols Outlined';
+        line-height: 1;
+        font-size: 48px;
+        display: inline-block;
+        vertical-align: middle; 
+        margin-right: 16px;
+    } 
+
+    .footer-call{
+        font-size: 36px;
+    }
+
+    .footer-social-logo{
+        height: 48px;
+        width: 48px;
+        padding: 0 16px;
+    }
+    .pl-0{
+        padding-left: 0 !important;
+    }
+
+    .footer-footer{
+    justify-content: space-between;
+    }
+
+    .footer-company{
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+
+    .footer-terms{
+        font-size: 14px;
+    }
+
+    .footer-terms-container{
+        padding: 0 24px;
+    }
+    
+    @media (max-width: 992px) {
+        .footer-social-logo{
+            height: 40px;
+            width: 40px;
+            padding: 0 8x;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .footer-nav-m{
+            display: none;
+          }
+
+        .footer-social-logo{
+            height: 24px;
+            width: 24px;
+            padding: 0 8px; 
+        }
+
+        .footer-contact-logo{
+        font-size: 18px;
+        margin-right: 11px;
+
+        }
+        .footer-call{
+            font-size: 16px;
+        }
+
+        .footer-company{
+            margin-bottom: 8px;
+        }
+        .footer-footer {
+            flex-direction: column;
+        }
+
+        .footer-terms{
+        display: inline;
+        }
+
+        .footer-header {
+            padding-bottom: 24px;
+            margin-bottom: 16px;}
+        
+        .footer-terms-container {
+             padding: 0;
+            margin-bottom: 8px;
+            }
+        } 

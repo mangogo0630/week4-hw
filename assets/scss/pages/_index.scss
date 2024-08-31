@@ -6,13 +6,24 @@
 .container{
   max-width: 1296px;
       margin: 0 auto;
+
+      @include pad{
+        max-width: 696px;
+       }
+
+      @include mobile{
+        max-width: 348px;
+       }
 }
 
-/*{max-width: 1320px;
+/*
+助教是這樣寫
+{max-width: 1320px;
 margin: 0 auto;
 padding-left: 12px;
 padding-right: 12px;
-}*/
+}
+*/
 
 
 .banner-bg{
@@ -176,35 +187,35 @@ padding-right: 12px;
   background-image: url("../images/index-bg-sm.png");
    }
    @include mobile{
-    background-image: url("../images/index-bg-md");
+    background-image: url("../images/index-bg-md.png");
    }
-}
+   padding-bottom: 40px;
 
-.cobrand h3{
-  font-size: 48px;
-  color: white;
-  font-weight: 900;
-  text-align: center;
-  padding-top: 80px;
-  @include mobile{
-    font-size:24px;
-    font-weight: 700;
-   }
-}
-
-.cobrand-list{
-  padding-top: 48px;
-  display: flex;
-  @include pad{
-    flex-wrap: wrap;
+   & h3{
+    font-size: 48px;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 80px;
+    @include mobile{
+      font-size:24px;
+      font-weight: 700;
+      padding-top: 40px;
+     }
   }
-  @include mobile{
-    padding-top: 24px;
-   }
-}
 
+  &-list{
+    padding-top: 48px;
+    display: flex;
+    @include pad{
+      flex-wrap: wrap;
+    }
+    @include mobile{
+      padding-top: 24px;
+     }
+  }
 
-.cobrand-container{
+  &-container{
     max-width: 1296px;
     margin: 0 auto;
     @include pad{
@@ -215,7 +226,7 @@ padding-right: 12px;
      }
 }
 
-.cobrand-card-h4{
+&-card-h4{
   font-size: 48px;
   color: $primary;
   font-weight: 900;
@@ -224,40 +235,71 @@ padding-right: 12px;
   background: white;
 }
 
-.cobrand-card-mb24{
+&-card-mb24{
   margin-bottom: 24px;
 }
 
-/*.cobrand {
-  background-image: url("../images/index-bg.png");
-  background-size: cover;
-  @include pad{
-    background-image: url("../images/index-bg-md.png");
+}
+
+.recommend{
+  padding: 80px 0;
+
+  &-h3{
+    font-size: 48px;
+    color: $secondary;
+    font-weight: 900;
+    text-align: center;
+    padding-bottom: 48px;}
+  
+    &-list{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    &-card{
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 2px 6px #00000029;
+      width: calc(25% - 18px);
+      @include pad{
+        width: calc(50% - 16px);
+      }
+  
+      @include mobile{
+        width: 100%;
+       }
+    }
+
+    &-card-body{
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    &-card-time {
+      color: #707070;
+      font-size: 14px;
+      margin-top: auto;}
+    
+      & p{
+        font-size: 16px;
+      }
   }
 
-  @include mobile{
-    background-image: url("../images/index-bg-sm.png");
-  }
-  &-list {
-    display: flex;
-    flex-wrap: wrap;
-    .card {
-      width: 50%;
-      @include pad{
-        width: 100%;
-      }
-      &-title {
-        font-size: 48px;
-        font-style: italic;
-        color: $primary;
-        font-weight: 900;
-        text-align: center;
-        background: white;
-      }
-      &-img {
-        height: 240px;
-        background-position: center;
-      }
-    }
-  }
-}*/
+.card-bottom{
+  margin-bottom: 72px;
+}
+
+.contact{
+padding: 80px 0;
+}
+
+.contact-h3{
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 48px;
+  text-align: center;
+  color: $secondary;
+}

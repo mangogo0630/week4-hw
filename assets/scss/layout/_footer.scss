@@ -101,10 +101,11 @@
 
       &-footer {
         flex-direction: column;
-      }
+              }
 
       &-terms{
         display: inline;
+       
       }
 
        &-header {
@@ -115,7 +116,13 @@
         &-terms-container {
         padding: 0;
         margin-bottom: 8px;
+        font-size: 14px;
       }
-        
+      
+      
     }
+}
+
+.footer-mr48{
+  margin-right: 48px;
 }

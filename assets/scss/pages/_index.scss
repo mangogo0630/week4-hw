@@ -296,10 +296,65 @@ padding-right: 12px;
 padding: 80px 0;
 }
 
+.contact{
+  background: #FBF2F2;
+}
+
 .contact-h3{
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 48px;
   text-align: center;
   color: $secondary;
+  @include mobile{
+    font-size: 24px;
+   }
 }
+
+.contact-container{
+  width: 636px;
+  margin: 0 auto;
+}
+
+.contact-wrapper {
+  max-width: 636px;
+  margin: 0 auto;
+  }
+
+.contact-Feedback{
+  margin-bottom: 24px;
+    font-size: 20px;
+}
+
+.contact-form-li{
+  margin-bottom: 16px;
+}
+
+.contact-form-label{
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-input {
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  background: #fbf2f2;
+  border: solid 1px black;
+  padding: 6px 12px;
+  box-sizing: border-box;
+}
+
+.contact-form-btn{
+  background: $primary;
+  color: white;
+  display: block;
+  width: 100%;
+  max-width: 416px;
+  border: none;
+  padding: 16px 0px;
+  margin: 0 auto;
+  margin-top: 64px;
+  font-size: 16px;
+}
+

@@ -1,3 +1,19 @@
+.container{
+    max-width: 1296px;
+        margin: 0 auto;
+        padding: 0 12px;
+  
+        @include pad{
+          max-width: 696px;
+          padding: 0 12px;
+         }
+  
+        @include mobile{
+          max-width: 348px;
+          padding: 0 12px;
+         }
+  }
+
 .store-container{
     margin-top: 96px;
 }
@@ -11,7 +27,7 @@
 }
 
 .store-search{
-  width: 33.3333%;
+  max-width: 416px;
   display: flex;
   margin-bottom: 40px;
   font-size: 24px;
@@ -45,6 +61,14 @@
 
 .store-col{
     width: calc(33.3333% - 16px);
+
+    @include pad{
+        width: calc(50% - 12px);
+    }
+
+    @include mobile-larger{
+        width: 100%;
+}
 }
 
 
@@ -52,7 +76,12 @@
     color:black;
     text-decoration: none;
     display: inline-block;
-  }
+}
+
+.store-card a:hover {
+    opacity: 0.7;
+}
+  
 
 .icon{
     font-family: 'Material Symbols Outlined';
@@ -60,6 +89,7 @@
     font-size: 24px;
     display: inline-block;
     line-height: 1;
+    font-weight: bold;
 }
 
 .card-body{
@@ -73,7 +103,7 @@
 }
 
 .card-information{
-    padding: 20px 24px;
+    padding: 16px 24px;
 }
 
 .card-information li{

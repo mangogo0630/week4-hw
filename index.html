@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />-->
     <title>index</title>
-    <script type="module" crossorigin src="/web-layout-training-vite/assets/main-03ea9603.js"></script>
-    <link rel="stylesheet" href="/web-layout-training-vite/assets/main-5a5763a3.css">
+    <script type="module" crossorigin src="/web-layout-training-vite/assets/main-729a07ba.js"></script>
+    <link rel="stylesheet" href="/web-layout-training-vite/assets/main-af7012ec.css">
   </head>
   <body>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
@@ -24,7 +27,7 @@
   </header>
 
     <main>
-      <section class="banner-bg">
+      <section class="banner-bg" > 
         <div class="container banner-wrap">
             <h2 class="banner-h2">Promise-Desert 2020 早春系列</h2>
             <h1 class="banner-h1">看得清，才能看得遠</h1>
@@ -32,11 +35,11 @@
         </div>
       </section>
 
-      <section class="feature-bg">
+      <section class="feature-bg" >
         <div class="container feature-container">
           <h3 class="feature-h2">用專業的心，做專業的事</h3>
 
-          <ul class="feature-list">
+          <ul class="feature-list" data-aos="fade-up">
 
             <li class="feature">
               <div class="feature-header">
@@ -76,16 +79,16 @@
         <div class="classic-container">
           <h3 class="classic-index-h3">經典系列鏡框</h3>
           <ul class="classic-card">
-            <li>
-              <img src="/web-layout-training-vite/assets/home-section3-1-bb26ab65.png" alt="OPTICAL"/>
+            <li >
+              <img data-aos="flip-left" src="/web-layout-training-vite/assets/home-section3-1-bb26ab65.png" alt="OPTICAL"/>
               <h4 class="classic-card-h4">OPTICAL</h4>
             </li>
             <li>
-              <img src="/web-layout-training-vite/assets/home-section3-2-38fdd6aa.png" alt="OPTICAL"/>
+              <img data-aos="flip-left" src="/web-layout-training-vite/assets/home-section3-2-38fdd6aa.png" alt="OPTICAL"/>
               <h4 class="classic-card-h4">SUNGLASSES</h4>
             </li>
             <li>
-              <img src="/web-layout-training-vite/assets/home-section3-3-52db7b9d.png"  alt="OPTICAL"/>
+              <img data-aos="flip-left" src="/web-layout-training-vite/assets/home-section3-3-52db7b9d.png"  alt="OPTICAL"/>
               <h4 class="classic-card-h4">FUNCTIONAL</h4>
             </li>
           </ul>
@@ -94,21 +97,21 @@
 
       <section class="cobrand">
         <div class="cobrand-container"> 
-          <h3 class="cobrand-h3">聯名設計鏡框</h3>
+          <h3 class="cobrand-h3" >聯名設計鏡框</h3>
           <ul class="cobrand-list">
             <li class="card cobrand-card-mb24">
               <picture>
                 <source srcset="/web-layout-training-vite/assets/home-section4-1-sm-a801b136.png " media="(max-width: 576px)" />
                 <img src="/web-layout-training-vite/assets/home-section4-1-59894574.png" alt="">
               </picture>
-              <h4 class="cobrand-card-h4">DOUBLE A+</h4>
+              <h4 class="cobrand-card-h4"   data-aos="line-animation" >DOUBLE A+</h4>
             </li>
             <li class="card">
               <picture>
                 <source srcset="/web-layout-training-vite/assets/home-section4-2-sm-2f57b61a.png " media="(max-width: 576px)" />
                 <img src="/web-layout-training-vite/assets/home-section4-2-daaeb8bc.png" alt="">
               </picture>
-              <h4 class="cobrand-card-h4">YOUTH</h4>
+              <h4 class="cobrand-card-h4"  data-aos="line-animation">YOUTH</h4>
             </li>
           </ul>
         </div>
@@ -116,8 +119,8 @@
 
 
 
-      <section class="recommend">
-        <div class="container">
+      <section class="recommend overflow-hidden">
+        <div class="container" data-aos="fade-left">
           <h3 class="recommend-h3">顧客推薦</h3>
           <ul class="recommend-list">
 
@@ -171,7 +174,7 @@
       <section class="contact contact-bg">
         <div class="contact-container">
           <div class="contact-wrapper">
-            <h3 class="contact-h3">聯絡我們</h3>
+            <h3 class="contact-h3 animate__animated animate__bounce" >聯絡我們</h3>
             <p class="contact-Feedback">
               我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
             </p>
@@ -252,7 +255,7 @@
         </ul>
       </div>
     </div>
-  </footer>
-    
+  </footer>    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
